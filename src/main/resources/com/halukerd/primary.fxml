@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="CENTER" hgap="10" prefHeight="475.0" prefWidth="400.0" vgap="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.halukerd.PrimaryController">
+
+   <Button layoutX="200.0" layoutY="127.0" mnemonicParsing="false" onAction="#singleFileSelection" prefHeight="26.0" prefWidth="200.0" text="Select Subtitle File" GridPane.rowIndex="0" />
+   <Button fx:id="convertButton" disable="true" layoutX="200.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleConvertAction" prefHeight="26.0" prefWidth="200.0" text="Add Translations" GridPane.rowIndex="3" />
+   <ProgressBar layoutX="200.0" layoutY="255.0" prefHeight="28.0" prefWidth="200.0" progress="0.0" GridPane.rowIndex="4" />
+   <Label fx:id="pathLabel" visible="false" alignment="CENTER" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+   <Label fx:id="nameLabel" visible="false" contentDisplay="CENTER" alignment="CENTER" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
